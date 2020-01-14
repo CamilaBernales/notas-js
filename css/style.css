@@ -1,0 +1,70 @@
+body{
+    
+    /*background: -webkit-linear-gradient(to left, #ddd6f3 , #faaca8); */
+    background: linear-gradient(to left, #430059 , #cf76e6f3);
+}
+
+.container{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    width: 450px;
+  margin: 70px auto;
+  background: -webkit-linear-gradient(to left, #ddd6f3 , #faaca8); 
+  background: linear-gradient(to left, #ddd6f3 , #faa8e1f3);
+  
+}
+
+
+
+.btn {
+    
+    border-radius: 10px;
+    margin-top: 10px ;
+    font-size: 15px;
+    
+  
+    
+}
+.btn:hover{
+    background-color:  #d41766;
+    opacity: 3;
+    
+}
+
+ .btn-primary {
+    
+    
+    background-color: #faaca8 !important;
+    border: white 2px solid !important;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-danger, .btn-warning {
+    color: #fff;
+    box-shadow: 0 0 0 0.1rem whitesmoke;
+}
+
+input[type="text"] {
+   
+    font-size: 18px;
+    line-height: 24px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 9px;
+
+    
+  }
+
+  .modal, .modal.dialog{
+    background: linear-gradient(to left, #ddd6f3 , #faa8e1f3);
+
+  }
+
+  .modal-header{
+    background: -webkit-linear-gradient(to left, #ddd6f3 , #faaca8); 
+
+  }
+label, .modal-header{
+color: purple;
+}
