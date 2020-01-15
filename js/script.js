@@ -93,8 +93,8 @@ function crearNota() {
     let contenido = document.getElementById('contenido');
     let categoria = document.getElementById('ListadoCateg');
 
-    if ((titulo.value != "" && titulo.value < 60) && (contenido.value != "" && contenido.value < 500 ) && ( categoria.value != "" && categoria.value < 30 )) {
-        let notitas = traerNotitas(); 
+    if ((titulo.value != "" && titulo.value.length < 60) && (contenido.value != "" && contenido.value.length < 500) && (categoria.value != "" && categoria.value.length < 30)) {
+        let notitas = traerNotitas();
         let identificador = new Date();
         let nota = new Nota(
             titulo.value,
@@ -111,20 +111,20 @@ function crearNota() {
         contenido.value = "";
 
         listarNotitas();
-    }else{
-
-        if(titulo.value >=60){
-            alert("Titulo no debe tener mas de 60 caracteres");
-        }else if(contenido.value>=500){
-            alert("Contenido no debe tener mas de 500 caracteres");
-
-        }else if(categoria.value>=30){
-            alert("Categoria no debe tener mas de 30 caracteres");
-
-        }else if(titulo.value=="" || contenido.value=="" || categoria.value ==""){
-                alert("Campo vacio");
-        }
     }
+     else {
+         if (titulo.value >= 60) {
+             alert("Titulo no debe tener mas de 60 caracteres");
+         } if (contenido.value >= 500) {
+             alert("Contenido no debe tener mas de 500 caracteres");
+ 
+         } if (categoria.value >= 30) {
+             alert("Categoria no debe tener mas de 30 caracteres");
+ 
+         } else if (titulo.value == "" || contenido.value == "" || categoria.value == "") {
+             alert("Campo vacio");
+         }
+        }
 }
 
 function traerNotitas() {
@@ -207,6 +207,6 @@ function buscarNota() {
         listarNotitas();
     }
 
-    
+
 }
 
