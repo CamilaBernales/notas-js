@@ -19,8 +19,8 @@
 
     <div class="container">
 
-        
-        <form class="form-inline my-2 my-lg-0" >
+
+        <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" id="buscadorTexto" type="search" placeholder="Ingresar titulo"
                 aria-label="Search">
             <button id="btn-buscar" class="btn btn-outline-success my-2 my-sm-0" type="submit"
@@ -29,8 +29,8 @@
 
 
         <p>
-            <button onclick= "listarCategorias()"class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
+            <button onclick="listarCategorias()" class="btn btn-primary" data-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
                 Crear Nota
             </button>
 
@@ -62,48 +62,44 @@
                 <button onclick="crearNota()" type="button" class="btn btn-primary" data-toggle="collapse"
                     href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Guardar</button>
 
-                <button onclick="crearCategoria()" type="button" class="btn btn-primary" data-toggle="modal"
-                    href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"  data-target="#exampleModal">Crear categoria</button>
+                <button  type="button" class="btn btn-primary" data-toggle="modal"
+                    href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                    data-target="#exampleModal" >Crear categoria</button>
 
             </form>
         </div>
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-                <label for="">categoria</label>
-                <input type="text" maxlength="19" class="form-control" id="categoria">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nueva categoria</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="">categoria</label>
+                                <input type="text" maxlength="19" class="form-control" id="categoriaIngresar">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button  onclick="crearCategoria()" type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
             </div>
-          </form>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button onclick="crearCategoria()" type="button" class="btn btn-primary">Guardar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
 
         <div>
-
-
             <div class="row">
-
-
-
                 <table class="table">
                     <thead>
                         <tr>
@@ -118,10 +114,6 @@
                 </table>
             </div>
         </div>
-
-
-
-
 
 
         <div class="modal fade" id="editarNotas" tabindex="-1" role="dialog" aria-labelledby="editalNotasModal"
